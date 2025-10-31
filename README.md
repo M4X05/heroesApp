@@ -24,14 +24,14 @@ Esta es una aplicación web completa construida con **Angular 16**. Es una aplic
 * **Framework:** Angular 16
 * **UI:** Angular Material
 * **Layout:** @ngbracket/ngx-layout (Flex Layout)
-* **Estilos:** Bootstrap 5 (para utilidades y estilos base)
-* **Backend (Simulado):** `json-server`
+* **Estilos:** Bootstrap 5
+* **Backend:** `json-server`
 
 ---
 
 ## Instalación y Puesta en Marcha
 
-Este proyecto requiere **dos** terminales para ejecutarse: una para el backend (servidor de datos) y otra para el frontend (la aplicación Angular).
+Este proyecto requiere **dos** terminales para ejecutarse: una para el backend y otra para el frontend.
 
 ### 1. Prerrequisitos
 
@@ -39,12 +39,7 @@ Tener instalado [Node.js].
 
 ### 2. Instalación de Dependencias
 
-1.  Clona el repositorio:
-    ```bash
-    git clone [https://github.com/M4X05/heroesApp]
-    cd heroesApp
-    ```
-2.  Instala las dependencias de npm:
+1.  Instala las dependencias de npm:
     ```bash
     npm install
     ```
@@ -78,7 +73,7 @@ La aplicación está configurada para conectarse a `http://localhost:3000` para 
 
 Estos scripts están definidos en el archivo `package.json`:
 
-* **`npm start`**: Inicia el servidor de desarrollo en modo "watch" (`ng serve`).
+* **`npm start`**: Inicia el servidor de desarrollo en modo "watch".
 * **`npm run build`**: Compila la aplicación para producción en el directorio `dist/heroes-app`.
 * **`npm run watch`**: Compila en modo desarrollo y observa los cambios.
 * **`npm test`**: Ejecuta las pruebas unitarias a través de Karma.
@@ -92,7 +87,7 @@ Estos scripts están definidos en el archivo `package.json`:
     * **`components`**: Componentes reutilizables (tarjeta del héroe, diálogo de confirmación).
     * **`interfaces`**: Define la estructura de datos `Heroe` y `Publisher`.
     * **`pages`**: Los componentes principales de cada ruta (Listado, Agregar, Buscar, Heroe, Home).
-    * **`pipes`**: Pipes personalizados (ej. `imagen.pipe.ts`).
+    * **`pipes`**: Pipes personalizados.
     * **`services`**: Servicio `HeroesService` para manejar la comunicación HTTP.
 * **`src/app/material`**: Módulo que importa y exporta todos los componentes de Angular Material.
 * **`src/app/shared`**: Componentes compartidos, como la página de error (`ErrorPageComponent`).
